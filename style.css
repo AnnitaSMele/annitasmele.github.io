@@ -36,7 +36,7 @@ footer{padding:35px 0 50px;color:#777;font-size:13px;display:flex;justify-conten
 }
 
 .project-card:hover .project-art img {
-    transform: scale(1.06);
+    transform: scale(2.06);
     filter: brightness(1.08) saturate(1.15);
 }
 @media(max-width:850px){.identity,.about{grid-template-columns:1fr}.projects{grid-template-columns:1fr}.metrics{grid-template-columns:repeat(2,1fr)}.qa-flow{grid-template-columns:1fr 1fr}.nav{display:none}.identity-card{transform:none}.job{grid-template-columns:1fr;gap:8px}.contact h2{font-size:50px}}
