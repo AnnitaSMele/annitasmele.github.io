@@ -20,22 +20,20 @@ section{padding:82px 0}.section-top{display:flex;justify-content:space-between;a
 .contact{background:#111;color:#fff;border-radius:36px;padding:60px}.contact h2{font-size:68px;line-height:.9;max-width:750px;margin:10px 0 20px}.contact p{max-width:600px;color:#cfcfcf;font-size:18px}.contact .btn{border-color:#fff;background:#fff;color:#111}
 footer{padding:35px 0 50px;color:#777;font-size:13px;display:flex;justify-content:space-between}
 .project-art {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 320px;
     overflow: hidden;
-    position: relative;
 }
 
 .project-art img {
-    width: 150%;
-    height: 150%;
-    object-fit: fill;
-    object-position: center;
     display: block;
-    transition: transform .4s ease, filter .4s ease;
-}
-
-.project-card:hover .project-art img {
-    transform: scale(1.06);
-    filter: brightness(1.08) saturate(1.15);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
 }
 @media(max-width:850px){.identity,.about{grid-template-columns:1fr}.projects{grid-template-columns:1fr}.metrics{grid-template-columns:repeat(2,1fr)}.qa-flow{grid-template-columns:1fr 1fr}.nav{display:none}.identity-card{transform:none}.job{grid-template-columns:1fr;gap:8px}.contact h2{font-size:50px}}
 @media(max-width:520px){.wrap{width:calc(100% - 26px)}section{padding:58px 0}.metrics,.qa-flow{grid-template-columns:1fr}h1{font-size:58px}.project-art{height:240px}.art-title{font-size:45px}.section-top{display:block}.section-top h2{font-size:44px}footer{display:block}.identity-card .position{font-size:30px}}
