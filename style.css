@@ -67,6 +67,7 @@ nav {
 }
 .hero {
     position: relative;
+    min-height: 750px;
     overflow: hidden;
     isolation: isolate;
 }
@@ -79,6 +80,7 @@ nav {
     object-fit: cover;
     object-position: center;
     z-index: -3;
+    filter: brightness(.55) saturate(1.2);
 }
 
 .hero-overlay {
@@ -87,9 +89,9 @@ nav {
     background:
         linear-gradient(
             90deg,
-            rgba(17,17,17,.88) 0%,
-            rgba(17,17,17,.65) 45%,
-            rgba(17,17,17,.35) 100%
+            rgba(17,17,17,.92) 0%,
+            rgba(17,17,17,.35) 45%,
+            rgba(17,17,17,.18) 100%
         );
     z-index: -2;
 }
