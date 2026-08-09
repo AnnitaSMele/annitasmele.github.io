@@ -65,7 +65,38 @@ nav {
     padding: 75px 0 90px;
     position: relative
 }
+.hero {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+}
 
+.hero-video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -3;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(17,17,17,.88) 0%,
+            rgba(17,17,17,.65) 45%,
+            rgba(17,17,17,.35) 100%
+        );
+    z-index: -2;
+}
+
+.hero::after {
+    z-index: -1;
+}
 .hero:after {
     content: "";
     position: absolute;
@@ -97,6 +128,7 @@ h3 {
     margin-top:28px;                 /* distancia */
     font-size:clamp(25px,3vw,48px);  /* tamaño */
     color:var(--cyan);               /* color */
+    letter-spacing:-.045em;
 }
 h1 {
     font-size: clamp(60px, 10vw, 124px);
