@@ -28,8 +28,8 @@ body {
     line-height: 1.55
 }
 .page-container {
-    width: 96%;
-    max-width: 1600px;
+    width: 100%;
+    max-width: none;
     margin: 0 auto;
 }
 
@@ -39,8 +39,10 @@ a {
 }
 
 .wrap {
-    width: min(1400px, calc(100% - 15px));
-    margin: auto
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0 24px;
 }
 
 nav {
