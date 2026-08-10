@@ -22,8 +22,8 @@ html {
 body {
     margin: 0;
     padding: 0;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
     background: var(--bg);
     color: var(--ink);
     font-family: "DM Sans", sans-serif;
