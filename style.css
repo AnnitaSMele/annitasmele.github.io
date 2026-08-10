@@ -67,10 +67,16 @@ nav {
 }
     */
 .hero {
-    position: relative;
+    /*position: relative;
     min-height: 100vh;
     overflow: hidden;
-    isolation: isolate;
+    isolation: isolate;*/
+
+    position: relative;
+    width: 100vw;
+    min-height: 750px;
+    margin-left: calc(50% - 50vw);
+    overflow: hidden;
 }
 
 .hero-video {
@@ -95,6 +101,13 @@ nav {
             rgba(17,17,17,.18) 100%
         );
     z-index: -2;
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 120px 40px;
 }
 
 .hero::after {
@@ -219,7 +232,7 @@ section {
     justify-content: space-between;
     align-items: end;
     gap: 30px;
-    margin-bottom: 35px
+    margin-bottom: 50px
 }
 
 .section-top h2 {
