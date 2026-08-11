@@ -115,13 +115,15 @@ img {
 
 .nav-bar {
     width: 100%;
-    margin: 0 auto;
-    padding: 22px 0;
+    height: 70px;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     z-index: 10;
+    background: var(--bg);
 }
 
 .logo {
@@ -841,7 +843,9 @@ footer {
     }
 
     .nav-links {
-        display: none;
+        display: flex;
+        gap: 14px;
+        font-size: .68rem;
     }
 
     .hero,
