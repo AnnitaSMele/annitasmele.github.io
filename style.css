@@ -570,7 +570,7 @@ footer {
     filter: brightness(1.08) saturate(1.15);
 }
 
-@media(max-width:1000px) {
+@media(max-width:800px) {
     .page-container {
         width: calc(100% - 80px);
     }
