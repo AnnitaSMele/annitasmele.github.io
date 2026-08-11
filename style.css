@@ -27,11 +27,7 @@ body {
     font-family: "DM Sans", sans-serif;
     line-height: 1.55
 }
-.page-container {
-    width: 100%;
-    max-width: none;
-    margin: 0;
-}
+
 
 a {
     text-decoration: none;
@@ -43,6 +39,11 @@ a {
     max-width: none;
     margin: 0;
     padding: 0 24px;
+}
+.page-container {
+    width: 100%;
+    max-width: none;
+    margin: 0;
 }
 
 nav {
@@ -567,7 +568,12 @@ footer {
     transform: scale(1.06);
     filter: brightness(1.08) saturate(1.15);
 }
-
+.page-container {
+    width: calc(100% - 60px) !important;
+    max-width: none !important;
+    margin-left: 30px !important;
+    margin-right: 30px !important;
+}
 @media(max-width:850px) {
 
     .identity,
