@@ -1,14 +1,17 @@
 :root {
-    --bg: #f6f6f1;
-    --ink: #111;
-    --muted: #666;
-    --line: #deded6;
-    --purple: #7055ff;
-    --pink: #ff5b9f;
-    --cyan: #16c5d4;
-    --lime: #b8e86d;
-    --orange: #ff9b45;
-    --white: #fff
+    --bg: #0d0f12;
+    --ink: #f5f3ee;
+    --muted: #a6a9b2;
+    --line: #292d34;
+    --purple: #a78bfa;
+    --pink: #5eead4;
+    --cyan: #5eead4;
+    --lime: #a78bfa;
+    --orange: #c4b5fd;
+    --white: #f5f3ee;
+    --surface: #15181d;
+    --surface-soft: #1b1f26;
+    --muted-dark: #747984;
 }
 
 * {
@@ -78,13 +81,13 @@ nav {
     padding: 6px;
     border: 1px solid rgba(17, 17, 17, .08);
     border-radius: 999px;
-    background: rgba(255, 255, 255, .72);
+    background: rgba(21, 24, 29, .82);
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
     box-shadow: 0 8px 30px rgba(17, 17, 17, .06);
     font-size: 13px;
     font-weight: 800;
-    color: #555;
+    color: var(--muted);
 }
 
 .nav a {
@@ -96,7 +99,7 @@ nav {
 
 .nav a:hover {
     color: var(--ink);
-    background: #fff;
+    background: var(--surface);
     transform: translateY(-1px);
 }
 
@@ -119,14 +122,14 @@ nav {
 
 .nav a:last-child {
     background: var(--ink);
-    color: #fff;
+    color: var(--white);
     padding-left: 17px;
     padding-right: 17px;
 }
 
 .nav a:last-child:hover {
     background: var(--purple);
-    color: #fff;
+    color: var(--white);
     transform: translateY(-1px);
 }
 
@@ -184,9 +187,9 @@ nav {
     background:
         linear-gradient(
             90deg,
-            rgba(17,17,17,.92) 0%,
-            rgba(17,17,17,.35) 45%,
-            rgba(17,17,17,.18) 100%
+            rgba(7,9,12,.92) 0%,
+            rgba(7,9,12,.42) 45%,
+            rgba(7,9,12,.16) 100%
         );
     z-index: -2;
 }
@@ -249,7 +252,7 @@ h1 em {
 
 .lead {
     font-size: 21px;
-    color: #454545;
+    color: #c5c7ce;
     max-width: 700px
 }
 
@@ -262,7 +265,7 @@ h1 em {
 
 .btn {
     padding: 13px 18px;
-    border: 1px solid var(--ink);
+    border: 1px solid var(--line);
     border-radius: 999px;
     font-weight: 800
 }
@@ -280,8 +283,8 @@ h1 em {
 }
 
 .identity-card {
-    background: #111;
-    color: #fff;
+    background: var(--surface);
+    color: var(--white);
     border-radius: 30px;
     padding: 30px;
     transform: rotate(1.5deg)
@@ -294,7 +297,7 @@ h1 em {
 }
 
 .identity-card p {
-    color: #cfcfcf
+    color: #b9bdc6
 }
 
 .chips {
@@ -304,7 +307,7 @@ h1 em {
 }
 
 .chip {
-    border: 1px solid #444;
+    border: 1px solid var(--line);
     border-radius: 999px;
     padding: 6px 10px;
     font-size: 11px;
@@ -342,7 +345,7 @@ section {
 }
 
 .project-card {
-    background: #fff;
+    background: var(--surface);
     border: 1px solid var(--line);
     border-radius: 28px;
     overflow: hidden;
@@ -364,23 +367,23 @@ section {
 }
 
 .project-art.purple {
-    background: linear-gradient(135deg, #7055ff, #ff5b9f)
+    background: linear-gradient(135deg, #7c5ce6, #2f8f89)
 }
 
 .project-art.cyan {
-    background: linear-gradient(135deg, #12c7d5, #7055ff)
+    background: linear-gradient(135deg, #2f8f89, #7c5ce6)
 }
 
 .project-art.green {
-    background: linear-gradient(135deg, #83df85, #54c7ff)
+    background: linear-gradient(135deg, #4c807b, #7180b8)
 }
 
 .project-art.orange {
-    background: linear-gradient(135deg, #ff6b6b, #ffc371)
+    background: linear-gradient(135deg, #665c82, #a88d72)
 }
 
 .project-art.pink {
-    background: linear-gradient(135deg, #ff8fab, #ffd166)
+    background: linear-gradient(135deg, #795d85, #a59a68)
 }
 
 .art-grid {
@@ -393,7 +396,7 @@ section {
 
 .art-title {
     position: relative;
-    color: #fff;
+    color: var(--white);
     font: 700 60px/.85 "Space Grotesk";
     letter-spacing: -.07em;
     text-shadow: 0 10px 30px rgba(0, 0, 0, .16)
@@ -406,7 +409,7 @@ section {
     padding: 7px 10px;
     border-radius: 999px;
     background: rgba(0, 0, 0, .68);
-    color: #fff;
+    color: var(--white);
     font-size: 9px;
     font-weight: 800;
     letter-spacing: .08em
@@ -425,14 +428,14 @@ section {
 
 .role {
     font-weight: 800;
-    color: #555
+    color: var(--muted)
 }
 
 .meta {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    color: #777;
+    color: var(--muted-dark);
     font-size: 13px;
     margin: 17px 0
 }
@@ -444,7 +447,7 @@ section {
 }
 
 .project-actions a {
-    background: #f0f0eb;
+    background: var(--surface-soft);
     padding: 8px 11px;
     border-radius: 999px;
     font-size: 12px;
@@ -452,8 +455,8 @@ section {
 }
 
 .project-actions a:first-child {
-    background: #111;
-    color: #fff
+    background: var(--surface);
+    color: var(--white)
 }
 
 .metrics {
@@ -466,8 +469,8 @@ section {
     min-height: 145px;
     border-radius: 23px;
     padding: 25px;
-    background: #111;
-    color: #fff
+    background: var(--surface);
+    color: var(--white)
 }
 
 .metric:nth-child(2) {
@@ -476,7 +479,7 @@ section {
 
 .metric:nth-child(3) {
     background: var(--cyan);
-    color: #111
+    color: var(--ink)
 }
 
 .metric:nth-child(4) {
@@ -502,7 +505,7 @@ section {
 }
 
 .step {
-    background: #fff;
+    background: var(--surface);
     border: 1px solid var(--line);
     border-radius: 22px;
     padding: 23px;
@@ -521,7 +524,7 @@ section {
 
 .step p {
     font-size: 13px;
-    color: #666;
+    color: var(--muted);
     margin: 0
 }
 
@@ -540,7 +543,7 @@ section {
 
 .about-copy {
     font-size: 19px;
-    color: #444
+    color: #c5c7ce
 }
 
 .skills {
@@ -554,7 +557,7 @@ section {
     padding: 9px 12px;
     border-radius: 999px;
     border: 1px solid var(--line);
-    background: #fff;
+    background: var(--surface);
     font-size: 13px;
     font-weight: 800
 }
@@ -582,18 +585,18 @@ section {
 
 .job .date {
     font-size: 13px;
-    color: #777
+    color: var(--muted-dark)
 }
 
 .job ul {
     margin: 10px 0 0;
     padding-left: 20px;
-    color: #444
+    color: #c5c7ce
 }
 
 .contact {
-    background: #111;
-    color: #fff;
+    background: var(--surface);
+    color: var(--white);
     border-radius: 36px;
     padding: 60px
 }
@@ -607,19 +610,19 @@ section {
 
 .contact p {
     max-width: 600px;
-    color: #cfcfcf;
+    color: #b9bdc6;
     font-size: 18px
 }
 
 .contact .btn {
-    border-color: #fff;
-    background: #fff;
-    color: #111
+    border-color: var(--white);
+    background: var(--surface);
+    color: var(--ink)
 }
 
 footer {
     padding: 35px 0 50px;
-    color: #777;
+    color: var(--muted-dark);
     font-size: 13px;
     display: flex;
     justify-content: space-between
@@ -647,11 +650,6 @@ footer {
     transform: scale(1.06);
     filter: brightness(1.08) saturate(1.15);
 }
-.hero h1 .name-first {
-    color: #fff;
-}
-
-
 
 @media(max-width:850px) {
 
@@ -736,14 +734,104 @@ footer {
         font-size: 30px
     }
 }
+
+
+/* ===== PALETA EDITORIAL / QA TECH ===== */
+
+body {
+    background: var(--bg);
+    color: var(--ink);
+}
+
+.lead,
+.section-top p,
+.about-copy,
+.job ul {
+    color: #c5c7ce;
+}
+
+.project-card,
+.step,
+.skill {
+    background: var(--surface);
+    border-color: var(--line);
+}
+
+.project-actions a {
+    background: var(--surface-soft);
+    color: var(--ink);
+}
+
+.project-actions a:first-child {
+    background: var(--ink);
+    color: var(--bg);
+}
+
+.metric {
+    background: var(--surface);
+    color: var(--white);
+}
+
+.metric:nth-child(2) {
+    background: #6f5bc7;
+}
+
+.metric:nth-child(3) {
+    background: #3b7773;
+    color: var(--white);
+}
+
+.metric:nth-child(4) {
+    background: #785c80;
+}
+
+.identity-card,
+.contact {
+    background: #111419;
+}
+
+.hero h1 .name-first {
+    color: var(--white);
+}
+
 .hero h1 .name-gradient {
-    background: linear-gradient(
-        90deg,
-        var(--purple),
-        var(--pink)
-    );
+    background: linear-gradient(90deg, var(--purple), var(--pink));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
+}
+
+.btn.dark {
+    background: var(--ink);
+    color: var(--bg);
+}
+
+.btn.dark:hover {
+    background: var(--purple);
+    color: #0d0f12;
+}
+
+.nav {
+    background: rgba(21, 24, 29, .82);
+    border-color: rgba(167, 139, 250, .18);
+}
+
+.nav a:hover {
+    background: var(--surface-soft);
+    color: var(--white);
+}
+
+.nav a:last-child {
+    background: var(--purple);
+    color: #0d0f12;
+}
+
+.nav a:last-child:hover {
+    background: var(--pink);
+    color: #0d0f12;
+}
+
+footer {
+    color: var(--muted-dark);
 }
