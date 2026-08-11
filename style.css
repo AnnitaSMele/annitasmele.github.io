@@ -651,17 +651,7 @@ footer {
     color: #fff;
 }
 
-.hero h1 .name-gradient {
-    background: linear-gradient(
-        90deg,
-        var(--purple),
-        var(--pink)
-    );
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-}
+
 
 @media(max-width:850px) {
 
@@ -745,4 +735,15 @@ footer {
     .identity-card .position {
         font-size: 30px
     }
+}
+.hero h1 .name-gradient {
+    background: linear-gradient(
+        90deg,
+        var(--purple),
+        var(--pink)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
 }
