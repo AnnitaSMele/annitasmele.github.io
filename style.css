@@ -1858,7 +1858,7 @@ footer {
     position: relative;
     z-index: 2;
     margin-bottom: 0;
-    padding-bottom: 70px;
+    padding-bottom: 30px;
 }
 
 .page-container {
@@ -1869,7 +1869,7 @@ footer {
 #projects {
     position: relative;
     margin-top: 0;
-    padding-top: 70px;
+    padding-top: 30px;
     background:
         radial-gradient(circle at 12% 12%, rgba(155,108,255,.16), transparent 28%),
         radial-gradient(circle at 88% 78%, rgba(77,232,255,.10), transparent 30%),
