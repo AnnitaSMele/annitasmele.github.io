@@ -18,7 +18,7 @@
     --surface-soft: #202844;
 
     --section-light: #f5f2ea;
-    --section-lavender: #e9e4ff;
+    --section-lavender: #e4e6ff;
     --section-blue: #a8b8e4;
     --section-peach: #fff0df;
     --section-pink: #f9e5ef;
@@ -343,15 +343,6 @@ section {
 }
 
 #projects + section {
-    background: var(--section-lavender);
-    color: var(--dark-text);
-    margin-left: calc(50% - 50vw);
-    margin-right: calc(50% - 50vw);
-    padding-left: max(40px, calc((100vw - 1320px) / 2));
-    padding-right: max(40px, calc((100vw - 1320px) / 2));
-}
-
-#method {
     background: var(--section-blue);
     color: var(--dark-text);
     margin-left: calc(50% - 50vw);
@@ -360,8 +351,17 @@ section {
     padding-right: max(40px, calc((100vw - 1320px) / 2));
 }
 
+#method {
+    background: var(--section-lavender);
+    color: var(--dark-text);
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    padding-left: max(40px, calc((100vw - 1320px) / 2));
+    padding-right: max(40px, calc((100vw - 1320px) / 2));
+}
+
 #method + section {
-    background: var(--section-peach);
+    background: var(--section-blue);
     color: var(--dark-text);
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
@@ -370,7 +370,7 @@ section {
 }
 
 #experience {
-    background: var(--section-pink);
+    background: var(--section-lavender);
     color: var(--dark-text);
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
