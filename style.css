@@ -1749,3 +1749,63 @@ footer {
 #projects .project-card:hover .project-art img {
     filter: brightness(1.08) saturate(1.18) contrast(1.04);
 }
+
+
+/* =========================================================
+   GAME IMAGE FRAMES — "QUALITY THAT PLAYERS FEEL" PALETTE
+   ========================================================= */
+
+#projects .project-art.purple {
+    background:
+        radial-gradient(circle at 20% 20%, rgba(155,108,255,.42), transparent 38%),
+        linear-gradient(135deg, #101426 0%, #171d35 55%, #35215c 100%);
+}
+
+#projects .project-art.cyan {
+    background:
+        radial-gradient(circle at 80% 20%, rgba(77,232,255,.38), transparent 38%),
+        linear-gradient(135deg, #0b1828 0%, #142943 55%, #253568 100%);
+}
+
+#projects .project-art.green {
+    background:
+        radial-gradient(circle at 20% 25%, rgba(200,255,77,.20), transparent 35%),
+        linear-gradient(135deg, #0f1929 0%, #172a38 55%, #214554 100%);
+}
+
+#projects .project-art.orange {
+    background:
+        radial-gradient(circle at 80% 20%, rgba(255,155,69,.30), transparent 38%),
+        linear-gradient(135deg, #151326 0%, #252044 55%, #492d4b 100%);
+}
+
+#projects .project-art.pink {
+    background:
+        radial-gradient(circle at 25% 20%, rgba(255,91,189,.34), transparent 38%),
+        linear-gradient(135deg, #121426 0%, #211a3d 55%, #402b60 100%);
+}
+
+/* Shared "Quality that players feel" glow */
+#projects .project-art {
+    border-bottom: 1px solid rgba(77,232,255,.15);
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.06),
+        inset 0 -1px 0 rgba(155,108,255,.10);
+}
+
+#projects .project-art::after {
+    background:
+        linear-gradient(135deg, rgba(255,255,255,.10), transparent 28%),
+        linear-gradient(315deg, rgba(77,232,255,.08), transparent 45%);
+}
+
+/* Make the image sit naturally inside the darker game frame */
+#projects .project-art img {
+    filter: saturate(1.10) contrast(1.04);
+    position: relative;
+    z-index: 1;
+}
+
+#projects .project-card:hover .project-art img {
+    filter: brightness(1.08) saturate(1.22) contrast(1.05);
+}
