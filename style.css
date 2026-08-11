@@ -42,8 +42,9 @@ a {
 }
 .page-container {
     width: 100%;
-    max-width: none;
-    margin: 0;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
 }
 
 nav {
@@ -647,10 +648,4 @@ footer {
     .identity-card .position {
         font-size: 30px
     }
-}
-.page-container {
-    width: calc(100% - 60px) !important;
-    max-width: none !important;
-    margin-left: 30px !important;
-    margin-right: 30px !important;
 }
