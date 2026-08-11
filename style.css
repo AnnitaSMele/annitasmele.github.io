@@ -41,10 +41,10 @@ a {
     padding: 0 24px;
 }
 .page-container {
-    width: 100%;
-    max-width: 100px;
-    margin: 0 auto;
-    padding: 0 80px;
+    width: calc(100% - 160px);
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 nav {
@@ -570,7 +570,10 @@ footer {
     filter: brightness(1.08) saturate(1.15);
 }
 
-@media(max-width:850px) {
+@media(max-width:1000px) {
+    .page-container {
+        width: calc(100% - 80px);
+    }
 
     .identity,
     .about {
