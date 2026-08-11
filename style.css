@@ -568,12 +568,7 @@ footer {
     transform: scale(1.06);
     filter: brightness(1.08) saturate(1.15);
 }
-.page-container {
-    width: calc(100% - 60px) !important;
-    max-width: none !important;
-    margin-left: 30px !important;
-    margin-right: 30px !important;
-}
+
 @media(max-width:850px) {
 
     .identity,
@@ -652,4 +647,10 @@ footer {
     .identity-card .position {
         font-size: 30px
     }
+}
+.page-container {
+    width: calc(100% - 60px) !important;
+    max-width: none !important;
+    margin-left: 30px !important;
+    margin-right: 30px !important;
 }
