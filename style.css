@@ -1701,3 +1701,51 @@ footer {
     background: linear-gradient(90deg, #9b6cff, #4de8ff);
     box-shadow: 0 0 18px rgba(77,232,255,.25);
 }
+
+
+/* =========================================================
+   GAME IMAGE FRAMES — CURRENT POSITION PALETTE
+   ========================================================= */
+
+#projects .project-art.purple {
+    background: linear-gradient(135deg, #171d35 0%, #252b50 100%);
+}
+
+#projects .project-art.cyan {
+    background: linear-gradient(135deg, #12283a 0%, #203b59 100%);
+}
+
+#projects .project-art.green {
+    background: linear-gradient(135deg, #172f38 0%, #253b4b 100%);
+}
+
+#projects .project-art.orange {
+    background: linear-gradient(135deg, #30233d 0%, #252b50 100%);
+}
+
+#projects .project-art.pink {
+    background: linear-gradient(135deg, #281f3e 0%, #252b50 100%);
+}
+
+/* Consistent dark HUD-like frame around every game image */
+#projects .project-art {
+    border-bottom: 1px solid rgba(167,139,250,.18);
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.05),
+        inset 0 -1px 0 rgba(77,232,255,.06);
+}
+
+#projects .project-art::after {
+    background:
+        linear-gradient(135deg, rgba(167,139,250,.16), transparent 42%),
+        linear-gradient(315deg, rgba(77,232,255,.10), transparent 48%);
+}
+
+/* Keep the game artwork itself crisp and vibrant */
+#projects .project-art img {
+    filter: saturate(1.08) contrast(1.03);
+}
+
+#projects .project-card:hover .project-art img {
+    filter: brightness(1.08) saturate(1.18) contrast(1.04);
+}
