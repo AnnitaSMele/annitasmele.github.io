@@ -115,14 +115,12 @@ img {
 
 .nav-bar {
     width: 100%;
-    margin: 0;
+    margin: 0 auto;
     padding: 22px 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
     z-index: 10;
 }
 
