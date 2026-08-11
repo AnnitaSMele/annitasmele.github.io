@@ -1848,3 +1848,74 @@ footer {
 #projects .project-card:hover .project-art img {
     filter: brightness(1.08) saturate(1.20) contrast(1.05);
 }
+
+
+/* =========================================================
+   QUALITY THAT PLAYERS FEEL + PROJECTS = ONE VISUAL SECTION
+   ========================================================= */
+
+.identity {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 0;
+    padding-bottom: 70px;
+}
+
+.page-container {
+    position: relative;
+}
+
+/* Projects immediately continues the Quality section */
+#projects {
+    position: relative;
+    margin-top: 0;
+    padding-top: 70px;
+    background:
+        radial-gradient(circle at 12% 12%, rgba(155,108,255,.16), transparent 28%),
+        radial-gradient(circle at 88% 78%, rgba(77,232,255,.10), transparent 30%),
+        linear-gradient(135deg, #101426 0%, #171d35 52%, #202844 100%);
+    border-top: 1px solid rgba(155,108,255,.14);
+}
+
+/* Remove the feeling of a separate light/white Projects block */
+#projects .project-card {
+    background:
+        linear-gradient(145deg, rgba(32,40,68,.96), rgba(17,21,42,.96));
+}
+
+/* Same visual language from the Quality section through the project area */
+.identity + #projects,
+.identity ~ #projects {
+    box-shadow:
+        inset 0 30px 60px rgba(0,0,0,.05),
+        0 -1px 0 rgba(77,232,255,.06);
+}
+
+/* Keep section title readable against the unified dark background */
+#projects .section-top h2 {
+    color: #f8f7ff;
+}
+
+#projects .section-top p {
+    color: #b8c0d8;
+}
+
+/* Shared accent treatment */
+#projects .section-top h2::after {
+    background: linear-gradient(90deg, #9b6cff, #4de8ff);
+}
+
+/* Make the transition between identity and projects seamless */
+.identity-card {
+    margin-bottom: 0;
+}
+
+@media (max-width: 850px) {
+    .identity {
+        padding-bottom: 45px;
+    }
+
+    #projects {
+        padding-top: 45px;
+    }
+}
