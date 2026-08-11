@@ -1919,3 +1919,30 @@ footer {
         padding-top: 45px;
     }
 }
+
+
+/* Remove the divider between "Quality that players feel" and Projects */
+.identity {
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
+
+#projects {
+    border-top: none !important;
+    box-shadow: none !important;
+    margin-top: 0 !important;
+}
+
+/* Eliminate any pseudo-element that could visually create a separator */
+.identity::after,
+.identity::before,
+#projects::after,
+#projects::before {
+    border: none !important;
+}
+
+/* Same background across the transition */
+.identity,
+#projects {
+    background-color: #101426 !important;
+}
